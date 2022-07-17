@@ -1,22 +1,32 @@
 package com.zipcodewilmington.assessment2.part2;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class ListUtility {
-    public Boolean add(int i) {
-        return null;
+     ArrayList<Integer> list = new ArrayList<>();
+
+
+    public Boolean add(Integer i) {
+        return list.add(i);
     }
 
     public Integer size() {
-        return null;
+        return list.size();
     }
 
     public List<Integer> getUnique() {
+
         return null;
     }
 
     public String join() {
-        return null;
+    String value="";
+    for(Integer i: list){
+        value +=i +", ";
+    }
+    return value.substring(0,value.length()-2); //-2 because added ", "
     }
 
     public Integer mostCommon() {
@@ -24,6 +34,6 @@ public class ListUtility {
     }
 
     public Boolean contains(Integer valueToAdd) {
-        return null;
+        return list.contains(valueToAdd);
     }
 }
